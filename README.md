@@ -18,3 +18,20 @@ github ssh提交代码步骤:<br>
 4.完成以后，输入cat ~/.ssh/id_rsa.pub查看公钥, 复制秘钥<br>
 5.登入github, 点击settings, 再点击SSH keys添加刚才复制的秘钥<br>
 6.配置完成<br>
+
+### 创建分支
+
+git branch 分支名
+例如: git branch template
+
+### 删除分支
+
+删除本地分支
+git branch -d 分支名
+
+删除远程分支
+git push origin --delete 分支名
+
+### 提交代码到其他分支
+git push -u origin 分支名
+例如: git push -u origin template
